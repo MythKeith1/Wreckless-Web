@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WRECKLESS SUPPLY® — No Excuses. Only Evidence.</title>
+
+  <meta name="description" content="WRECKLESS SUPPLY. Independent streetwear built under pressure. Discover limited-release essentials, heavyweight hoodies, and archive artifacts.">
+  <meta name="theme-color" content="#F2F0E9">
+
+  <meta property="og:title" content="WRECKLESS SUPPLY®">
+  <meta property="og:description" content="NO EXCUSES. ONLY EVIDENCE. Independent streetwear for the relentlessly disciplined.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ACCESSIBILITY -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <p>BUILT UNDER PRESSURE. RELEASED WITHOUT PERMISSION.</p>
+    <span class="announcement-index">EST. MMXXVI / INDEPENDENT BY DESIGN</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Wreckless Supply home">
+      WRECKLESS<span class="wordmark-symbol">®</span>
+      <span class="wordmark-sub">SUPPLY DEPARTMENT</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+      aria-label="Open navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="#collection">SHOP ALL</a>
+      <a href="#manifesto">THE MOVEMENT</a>
+      <a href="#archive">THE ARCHIVE</a>
+    </nav>
+
+    <button
+      class="cart-trigger"
+      id="cart-trigger"
+      type="button"
+      aria-label="Open shopping bag, 0 items"
+    >
+      BAG <span class="cart-count" id="cart-count">00</span>
+      <span aria-hidden="true">↗</span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          INDEPENDENT STREETWEAR / SERIES 001
+        </div>
+
+        <h1 id="hero-title">
+          BUILT<br>
+          UNDER<br>
+          <span class="hero-outline">PRESSURE<span class="red-period">.</span></span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-description">
+            Not made for everyone. Made for those who let their work
+            speak before they do.
+          </p>
+
+          <a class="button button-dark" href="#collection">
+            EXPLORE THE DROP <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <span class="hero-index">WS—001 / NO. 001</span>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1400&q=85"
+          alt="Streetwear collection editorial featuring contemporary urban fashion"
+          fetchpriority="high"
+          width="1400"
+          height="1750"
+        >
+
+        <div class="hero-image-overlay"></div>
+
+        <div class="hero-stamp">
+          <span>W</span>
+          <span>R</span>
+          <span>K</span>
+        </div>
+
+        <div class="hero-image-caption">
+          <span>FIG. 001 — THE UNIFORM</span>
+          <span>DISCIPLINE OVER EVERYTHING.</span>
+        </div>
+
+        <div class="vertical-label">PROPERTY OF WRECKLESS SUPPLY</div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>SCROLL TO DISCOVER</span>
+        <span aria-hidden="true">↓</span>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-label="Brand slogan">
+      <div class="ticker-track" aria-hidden="true">
+        <span>NO EXCUSES.</span>
+        <span class="ticker-star">✳</span>
+        <span>ONLY EVIDENCE.</span>
+        <span class="ticker-star">✳</span>
+        <span>FEAR NONE.</span>
+        <span class="ticker-star">✳</span>
+        <span>RUN RECKLESS.</span>
+        <span class="ticker-star">✳</span>
+        <span>NO EXCUSES.</span>
+        <span class="ticker-star">✳</span>
+        <span>ONLY EVIDENCE.</span>
+        <span class="ticker-star">✳</span>
+      </div>
+    </div>
+
+    <!-- COLLECTION -->
+    <section class="collection section-padding" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / THE CURRENT RELEASE</p>
+          <h2>THE FIRST<br><span class="text-muted">RECORD.</span></h2>
+        </div>
+
+        <p class="section-description">
+          Considered essentials. Heavy construction. Zero unnecessary noise.
+          Every piece has a purpose.
+        </p>
+      </div>
+
+      <div class="collection-toolbar">
+        <div class="filter-group" role="group" aria-label="Filter products">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">
+            ALL PIECES
+          </button>
+          <button class="filter-button" type="button" data-filter="hoodies" aria-pressed="false">
+            HOODIES
+          </button>
+          <button class="filter-button" type="button" data-filter="tees" aria-pressed="false">
+            TEES
+          </button>
+          <button class="filter-button" type="button" data-filter="accessories" aria-pressed="false">
+            OBJECTS
+          </button>
+        </div>
+
+        <span class="product-total" id="product-total">04 ARTIFACTS</span>
+      </div>
+
+      <!-- JS CAN REPLACE THESE CARDS WITH THE PRODUCT DATA -->
+      <div class="product-grid" id="product-grid" aria-live="polite">
+
+        <!-- PRODUCT 01 -->
+        <article
+          class="product-card"
+          data-product-id="rm001"
+          data-category="hoodies"
+        >
+          <button class="product-image-wrap" type="button" data-product-details="rm001" aria-label="View RM-001 Archive Hoodie">
+            <img
+              src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=80"
+              alt="Black heavyweight hoodie"
+              loading="lazy"
+              width="900"
+              height="1100"
+            >
+            <span class="product-tag">FIRST ARTIFACT</span>
+            <span class="product-quick-view">VIEW PIECE ↗</span>
+          </button>
+
+          <div class="product-info">
+            <div>
+              <p class="product-code">RM—001 / HOODIE</p>
+              <h3>ARCHIVE HOODIE</h3>
+            </div>
+            <p class="product-price" data-price="899">R899</p>
+          </div>
+
+          <button class="product-add" type="button" data-add-product="rm001">
+            ADD TO BAG <span aria-hidden="true">+</span>
+          </button>
+        </article>
+
+        <!-- PRODUCT 02 -->
+        <article
+          class="product-card"
+          data-product-id="rm002"
+          data-category="tees"
+        >
+          <button class="product-image-wrap" type="button" data-product-details="rm002" aria-label="View RM-002 Evidence Tee">
+            <img
+              src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+              alt="Minimal heavyweight white T-shirt"
+              loading="lazy"
+              width="900"
+              height="1100"
+            >
+            <span class="product-tag">CORE ESSENTIAL</span>
+            <span class="product-quick-view">VIEW PIECE ↗</span>
+          </button>
+
+          <div class="product-info">
+            <div>
+              <p class="product-code">RM—002 / TEE</p>
+              <h3>EVIDENCE TEE</h3>
+            </div>
+            <p class="product-price" data-price="449">R449</p>
+          </div>
+
+          <button class="product-add" type="button" data-add-product="rm002">
+            ADD TO BAG <span aria-hidden="true">+</span>
+          </button>
+        </article>
+
+        <!-- PRODUCT 03 -->
+        <article
+          class="product-card"
+          data-product-id="rm003"
+          data-category="hoodies"
+        >
+          <button class="product-image-wrap" type="button" data-product-details="rm003" aria-label="View RM-003 Pressure Crewneck">
+            <img
+              src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=80"
+              alt="Minimal dark crewneck sweatshirt"
+              loading="lazy"
+              width="900"
+              height="1100"
+            >
+            <span class="product-tag product-tag-red">SERIES 001</span>
+            <span class="product-quick-view">VIEW PIECE ↗</span>
+          </button>
+
+          <div class="product-info">
+            <div>
+              <p class="product-code">RM—003 / CREW</p>
+              <h3>PRESSURE CREWNECK</h3>
+            </div>
+            <p class="product-price" data-price="749">R749</p>
+          </div>
+
+          <button class="product-add" type="button" data-add-product="rm003">
+            ADD TO BAG <span aria-hidden="true">+</span>
+          </button>
+        </article>
+
+        <!-- PRODUCT 04 -->
+        <article
+          class="product-card"
+          data-product-id="rm004"
+          data-category="accessories"
+        >
+          <button class="product-image-wrap" type="button" data-product-details="rm004" aria-label="View RM-004 Uniform Cap">
+            <img
+              src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=80"
+              alt="Black structured streetwear cap"
+              loading="lazy"
+              width="900"
+              height="1100"
+            >
+            <span class="product-tag">DAILY ISSUE</span>
+            <span class="product-quick-view">VIEW PIECE ↗</span>
+          </button>
+
+          <div class="product-info">
+            <div>
+              <p class="product-code">RM—004 / OBJECT</p>
+              <h3>UNIFORM CAP</h3>
+            </div>
+            <p class="product-price" data-price="349">R349</p>
+          </div>
+
+          <button class="product-add" type="button" data-add-product="rm004">
+            ADD TO BAG <span aria-hidden="true">+</span>
+          </button>
+        </article>
+
+      </div>
+
+      <div class="collection-footer">
+        <p>04 ARTIFACTS / RELEASE 001</p>
+        <a href="#archive" class="text-link">
+          UNDERSTAND THE ARCHIVE <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto" id="manifesto">
+      <div class="manifesto-top">
+        <p class="eyebrow">02 / THE OPERATING PRINCIPLE</p>
+        <p class="manifesto-number">DOCUMENT 001—A</p>
+      </div>
+
+      <div class="manifesto-content">
+        <p class="manifesto-kicker">THIS WAS NEVER ABOUT CLOTHES.</p>
+
+        <h2>
+          NO EXCUSES.<br>
+          ONLY <span class="manifesto-red">EVIDENCE.</span>
+        </h2>
+
+        <div class="manifesto-bottom">
+          <span class="manifesto-symbol" aria-hidden="true">W.</span>
+
+          <p>
+            Pressure is the environment. Discipline is the response.
+            Independence is the result. We don't sell a shortcut to becoming
+            someone. We make uniforms for the work it takes.
+          </p>
+
+          <a class="button button-light" href="#story">
+            READ THE MANIFESTO <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <span class="manifesto-watermark" aria-hidden="true">WRS</span>
+    </section>
+
+    <!-- FEATURED SPOTLIGHT -->
+    <section class="spotlight section-padding" id="spotlight">
+      <div class="spotlight-image">
+        <img
+          src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1400&q=85"
+          alt="Black outerwear photographed in a minimalist fashion editorial"
+          loading="lazy"
+          width="1400"
+          height="1600"
+        >
+        <span class="spotlight-image-label">FIELD NOTE / 001</span>
+      </div>
+
+      <div class="spotlight-copy">
+        <p class="eyebrow">03 / OBJECT IN FOCUS</p>
+
+        <p class="spotlight-edition">WRECKLESS ARCHIVE / RM—001</p>
+
+        <h2>THE<br>ARCHIVE<br><span>HOODIE.</span></h2>
+
+        <p class="spotlight-description">
+          A foundational uniform. Oversized proportions, a considered
+          silhouette, and an identity that doesn't need explaining.
+        </p>
+
+        <ul class="spec-list">
+          <li><span>01</span> RELAXED SILHOUETTE</li>
+          <li><span>02</span> EVERYDAY CONSTRUCTION</li>
+          <li><span>03</span> ARCHIVE GRAPHIC LANGUAGE</li>
+        </ul>
+
+        <div class="spotlight-purchase">
+          <div>
+            <span class="spotlight-price">R899</span>
+            <span class="spotlight-currency">ZAR / DEMO PRICE</span>
+          </div>
+
+          <button class="button button-dark" type="button" data-add-product="rm001">
+            ADD TO BAG <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <p class="demo-disclaimer">
+          CONCEPT PRODUCT. SAMPLE PRICING AND AVAILABILITY ARE ILLUSTRATIVE.
+        </p>
+      </div>
+    </section>
+
+    <!-- BRAND STORY -->
+    <section class="brand-story section-padding" id="story">
+      <div class="story-heading">
+        <p class="eyebrow">04 / WHY WE EXIST</p>
+        <h2>THE WORK<br>IS THE <span>PROOF.</span></h2>
+      </div>
+
+      <div class="story-content">
+        <div class="story-marker">
+          <span>WRS®</span>
+          <span>INDEPENDENT CULTURE DIVISION</span>
+        </div>
+
+        <p class="story-lead">
+          WRECKLESS SUPPLY exists for people who are tired of announcing
+          what they intend to do.
+        </p>
+
+        <p class="story-body">
+          We believe identity is built through action. Not applause.
+          Not permission. Not promises. Every artifact represents a
+          principle: show up, put in the work, and let the evidence speak.
+        </p>
+
+        <a class="text-link" href="#archive">
+          ENTER THE ARCHIVE <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ARCHIVE STRIP -->
+    <section class="archive-section" id="archive">
+      <div class="archive-top">
+        <p class="eyebrow">05 / CLASSIFIED RECORDS</p>
+        <span>INTERNAL INDEX / 001–004</span>
+      </div>
+
+      <div class="archive-title">
+        <h2>EVERYTHING<br>LEAVES <span>A RECORD.</span></h2>
+        <p>FOUR ARTIFACTS. ONE OPERATING PRINCIPLE.</p>
+      </div>
+
+      <div class="archive-grid">
+        <div class="archive-record">
+          <span class="record-number">RM—001</span>
+          <span class="record-name">FIRST RECORDED ARTIFACT</span>
+          <span class="record-status">STATUS: ACTIVE</span>
+        </div>
+
+        <div class="archive-record">
+          <span class="record-number">RM—002</span>
+          <span class="record-name">EVIDENCE SERIES</span>
+          <span class="record-status">STATUS: ACTIVE</span>
+        </div>
+
+        <div class="archive-record">
+          <span class="record-number">RM—003</span>
+          <span class="record-name">PRESSURE DIVISION</span>
+          <span class="record-status">STATUS: ACTIVE</span>
+        </div>
+
+        <div class="archive-record">
+          <span class="record-number">RM—004</span>
+          <span class="record-name">DAILY ISSUE</span>
+          <span class="record-status">STATUS: ACTIVE</span>
+        </div>
+      </div>
+
+      <p class="archive-footnote">
+        ALL ARTIFACTS ARE CONCEPT DESIGNS FOR THIS PORTFOLIO DEMONSTRATION.
+      </p>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter section-padding" id="newsletter">
+      <div class="newsletter-copy">
+        <p class="eyebrow">06 / THE PRIVATE LIST</p>
+        <h2>LESS NOISE.<br><span>MORE SIGNAL.</span></h2>
+        <p>
+          Release announcements. Archive notes. No unnecessary messages.
+        </p>
+      </div>
+
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <label for="newsletter-email">YOUR EMAIL ADDRESS</label>
+
+        <div class="newsletter-input-row">
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            maxlength="254"
+            required
+            aria-describedby="newsletter-message"
+          >
+
+          <button type="submit" aria-label="Join the newsletter">
+            JOIN <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <p class="form-message" id="newsletter-message" role="status" aria-live="polite">
+          DEMO FORM — NO EMAILS WILL BE SENT OR STORED ON A SERVER.
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="footer-wordmark" href="#top">
+          WRECKLESS<span>®</span>
+        </a>
+
+        <p>NO EXCUSES. ONLY EVIDENCE.</p>
+        <p class="footer-small">INDEPENDENT BY DESIGN.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>EXPLORE</h2>
+        <a href="#collection">Shop all</a>
+        <a href="#spotlight">Featured artifact</a>
+        <a href="#archive">The archive</a>
+        <a href="#manifesto">The movement</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>INFORMATION</h2>
+        <a href="#story">Our story</a>
+        <a href="#newsletter">Private list</a>
+        <a href="mailto:hello@example.com">Contact demo</a>
+      </div>
+
+      <div class="footer-column footer-notice">
+        <h2>PROJECT STATUS</h2>
+        <p>INDEPENDENT STREETWEAR CONCEPT</p>
+        <p>DEMO CHECKOUT ONLY</p>
+        <p>NO LIVE PAYMENTS</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2026</span> WRECKLESS SUPPLY®</span>
+      <span>DESIGNED WITH INTENT. BUILT WITH EVIDENCE.</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER BACKDROP -->
+  <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+
+  <!-- SHOPPING CART DRAWER -->
+  <aside
+    class="cart-drawer"
+    id="cart-drawer"
+    aria-labelledby="cart-title"
+    aria-hidden="true"
+    inert
+  >
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">WRS / CHECKOUT DIVISION</p>
+        <h2 id="cart-title">YOUR BAG <span id="cart-heading-count">(00)</span></h2>
+      </div>
+
+      <button class="cart-close" id="cart-close" type="button" aria-label="Close shopping bag">
+        ×
+      </button>
+    </div>
+
+    <div class="cart-items" id="cart-items" aria-live="polite">
+      <div class="cart-empty">
+        <span class="cart-empty-symbol">W.</span>
+        <h3>NOTHING ON RECORD.</h3>
+        <p>Your bag is currently empty. Find something worth keeping.</p>
+        <button class="button button-dark" id="continue-shopping" type="button">
+          EXPLORE THE DROP ↗
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>SUBTOTAL</span>
+        <strong id="cart-subtotal">R0</strong>
+      </div>
+
+      <p class="cart-shipping-note">
+        Shipping and any applicable taxes are not calculated in this demo.
+      </p>
+
+      <button class="button button-dark checkout-button" id="checkout-button" type="button" disabled>
+        PROCEED TO CHECKOUT ↗
+      </button>
+
+      <p class="checkout-disclaimer">
+        DEMO ONLY. NO REAL PAYMENTS ARE ACCEPTED.
+      </p>
+    </div>
+  </aside>
+
+  <!-- PRODUCT DETAILS DIALOG -->
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-product-name">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close product details">
+      ×
+    </button>
+
+    <div class="dialog-content" id="dialog-content">
+      <div class="dialog-image-wrap">
+        <img id="dialog-product-image" src="" alt="" width="800" height="1000">
+      </div>
+
+      <div class="dialog-details">
+        <p class="eyebrow" id="dialog-product-code">WRS / ARTIFACT</p>
+        <h2 id="dialog-product-name">PRODUCT NAME</h2>
+        <p class="dialog-price" id="dialog-product-price">R0</p>
+        <p class="dialog-description" id="dialog-product-description"></p>
+
+        <div class="size-selector" id="size-selector">
+          <p class="size-label">SELECT SIZE</p>
+
+          <div class="size-options" id="size-options" role="group" aria-label="Select clothing size">
+            <button type="button" data-size="S" aria-pressed="false">S</button>
+            <button type="button" data-size="M" aria-pressed="false">M</button>
+            <button type="button" data-size="L" aria-pressed="false">L</button>
+            <button type="button" data-size="XL" aria-pressed="false">XL</button>
+          </div>
+
+          <p class="size-error" id="size-error" role="status" aria-live="polite"></p>
+        </div>
+
+        <button class="button button-dark dialog-add-button" id="dialog-add-button" type="button">
+          ADD TO BAG ↗
+        </button>
+
+        <p class="dialog-disclaimer">CONCEPT PRODUCT / ILLUSTRATIVE PRICING</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- LIVE ANNOUNCEMENTS -->
+  <div class="visually-hidden" id="live-announcer" role="status" aria-live="polite"></div>
+
+</body>
+</html>
